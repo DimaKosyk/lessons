@@ -1,0 +1,58 @@
+@import url("reset.css");
+
+*{
+  color: rgb(179, 12, 56);
+}
+
+a {
+  color: blue;
+}
+
+.menu__item-list > li {
+  color: black;
+}
+
+.header__title {
+  color: rgb(112, 16, 8);
+}
+
+#text {
+  color: green;
+}
+
+p.about__text {
+  color: rgb(141, 146, 6);
+}
+
+.about__text.text {
+  color: rgb(7, 148, 134);
+}
+
+.gameplay p {
+  color: rgb(155, 4, 186);
+}
+
+.gameplay .gameplay__text {
+  color: rgb(127, 206, 255);
+}
+
+.games__title,
+.games__subtitle {
+  color: rgb(110, 229, 6);
+}
+
+.games__subtitle+p {
+  color: rgb(255, 234, 0);
+}
+
+.connections__title~p {
+  color: rgb(64, 255, 0);
+}
+
+.connections * {
+  color: rgb(204, 52, 254);
+}
+
+[class*="__info"] {
+  color: rgb(0, 30, 128);
+}
