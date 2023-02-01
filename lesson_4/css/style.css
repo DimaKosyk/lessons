@@ -1,0 +1,98 @@
+@import url("reset.css");
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('../fonts/Gilroy-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('../fonts/Gilroy-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('../fonts/Gilroy-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.header{
+  margin-bottom: 5px;
+}
+
+.header__title{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.menu{
+  text-decoration: underline;
+  font-style: oblique;
+}
+
+.title{
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.about{
+  margin-bottom: 10px;
+}
+
+.about__image{
+  margin-bottom: 10px;
+}
+
+.about__text{
+  font-size: 18px;
+}
+
+.gameplay__image{
+  width: 800px;
+  height: 500px;
+}
+
+.text{
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+}
+
+.gameplay__text{
+  text-shadow: 5px 5px 10px rgb(12, 134, 71);
+}
+
+.development__text{
+  text-transform: lowercase;
+  word-spacing: 10px;
+}
+
+.release__text{
+  line-height: 1.2;
+  text-decoration: line-through;
+}
+
+.footer__list{
+  color: blue;
+  text-indent: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
