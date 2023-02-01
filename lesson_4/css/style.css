@@ -82,6 +82,7 @@ body {
 .development__text{
   text-transform: lowercase;
   word-spacing: 10px;
+  text-align: justify;
 }
 
 .release__text{
