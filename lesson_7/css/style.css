@@ -142,12 +142,14 @@ body{
 }
 
 .speaker__buy{
+  display: inline-block;
   font-weight: 600;
   line-height: 1.5;
   padding: 10px 30px;
   background-color: #3056D3;
   border-radius: 30px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .lists{
