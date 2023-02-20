@@ -23,8 +23,8 @@ body {
 .header {
   font-family: "Poppins", sans-serif;
   padding: 36px 0 100px;
-  background: url("../img/vence-bg.jpg") 0 0 / cover no-repeat;
   background-color: #588ef1;
+  background: url("../img/vence-bg.jpg") 0 0 / cover no-repeat;
   border-radius: 0px 5px 5px 0px;
 }
 
@@ -203,11 +203,13 @@ body {
 
 .list {
   margin-bottom: 60px;
+  max-width: 400px;
 }
 
 .list li {
   line-height: 15px;
   color: #637381;
+  padding-left: 25px;
 }
 
 .list li:not(:last-child) {
@@ -221,7 +223,8 @@ body {
   height: 8px;
   background-color: #3056d3;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 18px;
+  margin-left: -25px;
   transition: 0.3s all;
 }
 
@@ -240,10 +243,11 @@ body {
 .list__check-blue li::before {
   content: "";
   display: inline-block;
-  background: url("../img/blue-checkmark.svg") center no-repeat;
-  width: 20px;
-  height: 20px;
+  background: url("../img/blue-checkmark.svg") 0 0 / 15px 15px no-repeat;
+  width: 15px;
+  height: 15px;
   vertical-align: middle;
+  margin-left: -25px;
   margin-right: 10px;
   transition: 0.3s all;
 }
@@ -263,7 +267,7 @@ body {
 .list__check-green li::before {
   content: "";
   display: inline-block;
-  background: url("../img/green-checkmark.svg") center no-repeat;
+  background: url("../img/green-checkmark.svg") 0 0 no-repeat;
   width: 20px;
   height: 20px;
   vertical-align: middle;
