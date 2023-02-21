@@ -1,0 +1,152 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+[class*="__container"] {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+[class*="__title"] {
+  font-size: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+  background-color: #b0f13f;
+}
+
+.icons {
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.icons__title,
+.icons__text-box,
+.design__title,
+.design__text-box,
+.content__title,
+.content__text-box {
+  margin-bottom: 15px;
+}
+
+.icons__text,
+.design__text,
+.content__text {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.icons__list,
+.design__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icons__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  min-height: 100px;
+  margin: 0 20px 20px 0;
+  padding: 20px;
+  border-radius: 20px;
+  outline: 2px solid #3056d3;
+  cursor: pointer;
+}
+
+.icons__list li:nth-child(3n + 3),
+.design__list li:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.icons__list li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.icons__list li:nth-child(odd) {
+  background-color: #dcae2f;
+}
+
+.icons__list li:nth-child(even) {
+  background-color: #47a00b;
+}
+
+.design {
+  margin-bottom: 20px;
+}
+
+.design__image {
+  width: 400px;
+  min-height: 300px;
+  margin: 0 20px 20px 0;
+  padding: 20px;
+  border-radius: 20px;
+  outline: 2px solid #3056d3;
+  cursor: pointer;
+}
+
+.decor-1 {
+  background: url("../img/decor/decor-1.svg") 15% no-repeat, url("../img/decor/decor-2.svg") center no-repeat,
+    url("../img/decor/decor-4.svg") 85% no-repeat;
+}
+
+.decor-2 {
+  background: url("../img/decor/decor-3.svg") 15% no-repeat, url("../img/decor/decor-9.svg") center no-repeat,
+    url("../img/decor/decor-6.svg") 85% no-repeat, #3056d3;
+}
+
+.decor-3 {
+  background: url("../img/decor/decor-7.svg") 25% no-repeat, url("../img/decor/decor-8.svg") 75% no-repeat, #090e34;
+}
+
+.decor-4 {
+  background: url("../img/decor/decor-13.svg") center no-repeat, #090e34;
+}
+
+.decor-5 {
+  background: url("../img/decor/decor-14.svg") center no-repeat, #090e34;
+}
+
+.decor-6 {
+  background: url("../img/decor/decor-11.svg") 25% no-repeat, url("../img/decor/decor-12.svg") 75% no-repeat;
+}
+
+.decor-7 {
+  background: url("../img/decor/decor-10.svg") 25% no-repeat, url("../img/decor/decor-15.svg") 75% no-repeat;
+  margin: 0;
+}
+
+.content {
+  padding: 20px 0;
+}
+
+.content__image {
+  display: inline-block;
+}
+
+[class*="__image-box"] {
+  font-size: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.content__image-box img {
+  width: 1240px;
+}
