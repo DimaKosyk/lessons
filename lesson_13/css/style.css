@@ -1,0 +1,320 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.block {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.block__item {
+  width: 200px;
+  height: 200px;
+  background-color: #3056d3;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.5s ease-in;
+}
+
+.block__item:hover {
+  background-color: #cd835a;
+  cursor: pointer;
+}
+
+
+@keyframes moving {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  30% {
+    transform: translate(100px, 0);
+  }
+
+  60% {
+    transform: translate(300px, 0px);
+  }
+
+  100% {
+    transform: translate(800px, 0px);
+  }
+}
+
+@keyframes moving-back {
+  0% {
+    transform: translate(800px, 0px);
+  }
+
+  30% {
+    transform: translate(300px, 0);
+  }
+
+  60% {
+    transform: translate(100px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes wheel-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wheel-back-rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.car {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.car__content {
+  display: inline-block;
+  max-width: 300px;
+  animation: moving 5s linear 1 normal running 0s forwards, moving-back 5s linear 1 normal running 5s forwards;
+}
+
+.car__cab {
+  position: absolute;
+  top: -100px;
+  left: -4px;
+  width: 250px;
+  height: 100px;
+  background-color: #ff5c64;
+  border-radius: 60px 30px 0px 0px;
+  border: 4px solid #000;
+  border-bottom: none;
+  z-index: 2;
+}
+
+.car__body {
+  cursor: pointer;
+  position: relative;
+  width: 300px;
+  height: 80px;
+  background-color: #ff5c64;
+  border: 4px solid #000;
+  border-radius: 0px 30px 0px 0px;
+}
+
+.car__window {
+  background-color: #c6e3f7;
+  border: 4px solid #000;
+}
+
+.car__window:first-child {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 120px;
+  height: 80px;
+  border-radius: 45px 0px 0px 0px;
+}
+
+.car__window:last-child {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 70px;
+  height: 80px;
+  border-radius: 0px 20px 0px 0px;
+}
+
+.car__headlight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #ffe266;
+  border: 4px solid #000;
+  border-top: none;
+  border-right: none;
+  border-radius: 0px 26px 0px 20px;
+  transition: all 1s;
+}
+
+.car__body:hover .car__headlight {
+  background-color: #ff2444;
+}
+
+.car__floor {
+  position: absolute;
+  top: 55px;
+  left: -15px;
+  width: 320px;
+  height: 25px;
+  background-color: #88e9ff;
+  border: 4px solid #000;
+  border-radius: 4px;
+}
+
+.car__wheels {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+
+.car__wheel {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #57565c;
+  border: 5px solid #000;
+  outline: 5px dotted #000;
+  animation: wheel-rotate 5s linear 1 normal running 0s forwards, wheel-back-rotate 5s linear 1 normal running 5s forwards;
+  transition: all 1s;
+}
+
+.car__wheel::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 5px solid #000;
+  background-color: #aacee0;
+}
+
+.car__wheel:first-child {
+  top: -60px;
+  left: 20px;
+}
+
+.car__wheel:last-child {
+  top: -60px;
+  left: 180px;
+}
+
+.car__body:hover .car__wheel {
+  transform: rotate(360deg);
+}
+
+.block__transition-duration:hover {
+  transform: translate(20px, 20px);
+  transition-duration: 500ms;
+}
+
+.block__transition-delay:hover {
+  transform: translate(20px, 20px);
+  transition-delay: 200ms;
+}
+
+.block__transition-timing-function:hover {
+  transform: translate(30px, 30px);
+  transition-timing-function: cubic-bezier(.13, 1.34, .89, -0.48);
+}
+
+.block__transition:hover {
+  transform: translate(30px, 30px);
+  transition: all 0.5s cubic-bezier(.13, 1.34, .89, -0.48) 300ms;
+}
+
+.block__animation-duration {
+  animation-name: duration;
+  animation-duration: 5s;
+}
+
+@keyframes duration {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    transform: translate(50px, 0px);
+  }
+}
+
+.block__animation-timing-function {
+  animation-name: timing;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes timing {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 80px);
+  }
+}
+
+.block__animation-iteration-count {
+  animation-name: iteration;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation-iteration-count: infinite;
+}
+
+@keyframes iteration {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.block__animation-direction {
+  animation-name: direction;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes direction {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(70deg);
+  }
+}
