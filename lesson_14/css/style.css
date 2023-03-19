@@ -237,6 +237,10 @@ body {
   background-color: #212529;
 }
 
+.card-categories__link{
+  display: block;
+}
+
 .card-categories__tag {
   position: absolute;
   right: 30px;
