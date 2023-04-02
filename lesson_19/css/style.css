@@ -291,7 +291,7 @@ body {
   transition: color 0.3s;
 }
 
-.category__discount::after {
+.category-discount::after {
   content: "-50% Flat Discount";
   position: absolute;
   right: 0;
@@ -388,7 +388,7 @@ body {
     padding: 10px;
   }
 
-  .category__discount::after {
+  .category-discount::after {
     font-weight: 500;
     font-size: 14px;
   }
@@ -1269,7 +1269,7 @@ body {
 }
 
 .design__container {
-  max-width: 1230;
+  max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -1375,7 +1375,7 @@ body {
 }
 
 .interier__container {
-  max-width: 1230;
+  max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
 }
