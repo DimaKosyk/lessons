@@ -1032,6 +1032,7 @@ body {
   line-height: 1.5; /* 39px/26px */
   color: #000000;
   margin-bottom: 32px;
+  transition: color 0.3s;
 }
 .item-blog__text {
   font-family: "Roboto", sans-serif;
@@ -1079,5 +1080,13 @@ body {
   }
   .item-blog__title {
     font-size: 18px;
+  }
+}
+@media (any-hover: hover) {
+  .item-blog__title:hover {
+    color: #eb5757;
+  }
+  .item-blog__date:hover {
+    text-decoration: underline;
   }
 }
