@@ -781,6 +781,7 @@ body {
 .slider-topics__text {
   line-height: 1.67;
   color: #e5e5e5;
+  text-shadow: 2px 0px 10px #000, -2px 0px 10px #000;
 }
 @media (max-width: 47.99875em) {
   .slider-topics {
