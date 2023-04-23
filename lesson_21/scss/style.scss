@@ -742,6 +742,7 @@ body {
   &__text {
     line-height: 1.67;
     color: #e5e5e5;
+    text-shadow: 2px 0px 10px #000, -2px 0px 10px #000;
   }
   @media (max-width: em(767.98)) {
     min-height: 500px;
